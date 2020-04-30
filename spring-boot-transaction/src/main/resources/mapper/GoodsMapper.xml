@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 本映射文件对应GoodsDao接口 -->
+<mapper namespace="com.imooc.springboottransaction.GoodsDao">
+	<!-- 对应GoodsDao中的selectForUpdate方法 -->
+	<select id="selectForUpdate" resultMap="resultMapBase" parameterType="java.lang.Long">
+		select <include refid="sqlBase" /> from goods where id = #{id} for update
+	</select>
+	<!-- 对应GoodsDao中的update方法 -->
+	<update id="update" parameterType="com.imooc.springboottransaction.GoodsDo">
+		update goods set name=#{name},num=#{num} where id=#{id}
+	</update>
+	<!-- 可服用的sql模板 -->
+	<sql id="sqlBase">
+		id,name,num
+	</sql>
+	<!-- 保存SQL语句查询结果与实体类属性的映射 -->
+	<resultMap id="resultMapBase" type="com.imooc.springboottransaction.GoodsDo">
+		<id column="id" property="id" />
+		<result column="name" property="name" />
+		<result column="num" property="num" />
+	</resultMap>
+</mapper>

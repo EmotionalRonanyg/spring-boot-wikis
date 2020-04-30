@@ -3,7 +3,7 @@ package com.imooc.springboottransaction;
 /**
  * 订单类
  */
-public class MyorderDo {
+public class OrderDo {
 	/**
 	 * 订单id
 	 */
