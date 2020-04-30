@@ -1,0 +1,50 @@
+http://note.youdao.com/noteshare?id=661fe2c3d5cac77cb21afedcded1cada&sub=68D6167ED2E24AD08A16229E0959A948
+
+名词：
+Spring Boot -- 官网写法，分开写，首字母大写
+Java -- 官网写法，首字母大写
+Java Web -- 习惯性写法，分开写，首字母大写
+SSH -- 习惯性写法，代表 Struts + Spring +Hibernate
+MVC -- 习惯性写法
+EJB -- 官网写法
+XML -- 大写表示名词
+Spring Cloud -- 官网写法
+Maven -- 官网写法
+Spring Initializr -- 官网写法
+Gradle -- 官网写法
+Eclipse --官网写法
+Bean -- 习惯性写法
+JSP -- 官方写法
+HTML -- 官方写法
+Ajax -- 习惯性写法
+JSON -- 官网写法
+API -- 习惯性写法
+APP -- 习惯性写法
+SEO -- 习惯性写法
+FreeMaker -- 官网写法
+Thymeleaf -- 官网写法
+HTTP -- 作为名词的写法
+RESTful -- 官方写法
+CSS -- 官网写法
+JavaScript -- 官网写法
+Bootstrap -- 官网写法
+Postman -- 官网写法
+GET / POST / PUT / DELETE -- 习惯性写法
+URL -- 作为名词的写法
+Swagger2 -- 官网写法
+jQuery -- 官网写法
+CORS -- 习惯性写法
+Linux -- 作为名词
+Windows Server -- 官方写法
+JDK -- 官网写法
+nginx -- 官网写法
+IP -- 作为名词
+JdbcTemplate -- 习惯性写法
+JDBC -- 官方写法
+MySQL -- 官方写法
+Druid -- 官网写法
+JPA -- 作为名词
+Sun -- 公司名称
+ORM -- 作为名词
+MyBatis -- 官网写法
+JUnit -- 官网写法
