@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.imooc</groupId>
-	<artifactId>spring-boot-multidb</artifactId>
+	<artifactId>spring-boot-multidbpre</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-multidb</name>
+	<name>spring-boot-multidbpre</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -78,7 +78,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 	</dependencies>
 
 	<build>

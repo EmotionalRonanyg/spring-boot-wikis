@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 本映射文件对应ErpOrderDao接口 -->
+<mapper
+	namespace="com.imooc.springbootmultidb.mapper2.ErpOrderDao">
+	<!-- 对应ErpOrderDao中的insert方法 -->
+	<insert id="insert"
+		parameterType="com.imooc.springbootmultidb.mapper2.ErpOrderDo">
+		insert into erp_order (out_id,goods_id,count) values
+		(#{outId},#{goodsId},#{count})
+	</insert>
+</mapper>
