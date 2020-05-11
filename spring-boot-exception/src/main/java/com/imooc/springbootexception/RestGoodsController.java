@@ -23,7 +23,7 @@ public class RestGoodsController {
 	 * 抛出密码错误异常的方法
 	 */
 	@RequestMapping("/rest_checkPassword")
-	public ResultBo rest_checkPassword() throws PasswordException {
+	public ResultBo rest_checkPassword() throws BaseException {
 		if (true) {
 			throw new PasswordException();
 		}
@@ -34,7 +34,7 @@ public class RestGoodsController {
 	 * 抛出密码错误异常的方法
 	 */
 	@RequestMapping("/rest_checkVassword")
-	public ResultBo rest_checkVassword() throws VerificationCodeException {
+	public ResultBo rest_checkVassword() throws BaseException {
 		if (true) {// 必然抛出异常，便于测试
 			throw new VerificationCodeException();
 		}
