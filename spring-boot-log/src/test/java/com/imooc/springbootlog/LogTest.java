@@ -5,21 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
-<<<<<<< HEAD
-@SpringBootTest
-class LogTest {
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
-
-	@Test
-	void testPrintLog() {
-		logger.trace("trace log");
-		logger.debug("debug log");
-		logger.info("info log");
-		logger.warn("warn log");
-		logger.error("error log");
-	}
-}
-=======
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootTest
@@ -38,4 +23,3 @@ class LogTest {
 		log.error("error log");
 	}
 }
->>>>>>> 1fc96b2e52878577eeda80a87b91da5838626228
