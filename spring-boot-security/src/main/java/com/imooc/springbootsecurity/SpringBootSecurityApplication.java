@@ -1,4 +1,4 @@
-package com.forwhatsogood.springbootsecurity;
+package com.imooc.springbootsecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
