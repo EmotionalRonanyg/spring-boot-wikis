@@ -25,7 +25,7 @@ public class ServiceAspect {
 	public Object deAround(ProceedingJoinPoint joinPoint) throws Throwable {
 		long startTime = System.currentTimeMillis();// 记录开始时间
 		Object result = joinPoint.proceed();
-		logger.info("开放接口:{}--执行时间:{}毫秒", joinPoint.getSignature(), System.currentTimeMillis() - startTime);
+		logger.info("服务层方法:{}--执行时间:{}毫秒", joinPoint.getSignature(), System.currentTimeMillis() - startTime);
 		return result;
 	}
 }
