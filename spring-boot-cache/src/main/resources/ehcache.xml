@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns='http://www.ehcache.org/v3'
+	xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core.xsd">
+	<!-- 持久化路径 -->
+	<persistence directory="C://ehcache" />
+	<!--缓存模板 -->
+	<cache-template name="CacheTemplate">
+		<expiry>
+			<!--存活时间 -->
+			<tti>60</tti>
+		</expiry>
+		<resources>
+			<!--堆空间 -->
+			<heap unit="entries">2000</heap>
+			<!-- 堆外空间 -->
+			<offheap unit="MB">500</offheap>
+		</resources>
+	</cache-template>
+
+	<!--缓存对象 -->
+	<cache alias="GoodsCache" uses-template="CacheTemplate">
+	</cache>
+</config>
