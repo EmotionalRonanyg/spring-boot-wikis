@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class VisitService {
+	// 设定访问次数Redis键名
 	private final static String KEY = "visit_count";
 
 	// 注入redisTemplate操作Redis
@@ -16,21 +17,17 @@ public class VisitService {
 	private RedisTemplate<String, String> redisTemplate;
 
 	// 获取当前访问次数
-	public Long getCurrentCount() {
+	public String getCurrentCount() {
 		String count = redisTemplate.opsForValue().get(KEY);
 		if (count == null || "".equals(count)) {
-			return 0L;
+			redisTemplate.opsForValue().set(KEY, "0");
+			return "0";
 		}
-		return Long.parseLong(count);
+		return count;
 	}
 
 	// 访问次数加1
 	public void addCount() {
-		String count = redisTemplate.opsForValue().get(KEY);
-		if (count == null || "".equals(count)) {
-			redisTemplate.opsForValue().set(KEY, "1");
-			return;
-		}
-		redisTemplate.opsForValue().set(KEY, String.valueOf(Long.parseLong(count) + 1));
+		redisTemplate.opsForValue().increment(KEY, 1);
 	}
 }

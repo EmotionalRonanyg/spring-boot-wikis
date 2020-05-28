@@ -9,8 +9,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/**
+ * 访问统计服务测试
+ */
 @SpringBootTest
-class SpringBootRedisApplicationTests {
+class VisitServiceTest {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	@Autowired
 	private VisitService visitService;
@@ -18,6 +21,7 @@ class SpringBootRedisApplicationTests {
 	@Test
 	void test() {
 		logger.info("访问次数：{}", visitService.getCurrentCount());
+		// 使用线程池快速发起10000次访问
 		ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 		for (int i = 0; i < 10000; i++) {
 			cachedThreadPool.execute(new Runnable() {
