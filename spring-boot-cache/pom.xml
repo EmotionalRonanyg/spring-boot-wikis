@@ -34,16 +34,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
-		<!-- Ehcache 依赖 -->
+		<!-- Redis 相关依赖 -->
 		<dependency>
-			<groupId>org.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-		<!-- cache-api 依赖 -->
 		<dependency>
-			<groupId>javax.cache</groupId>
-			<artifactId>cache-api</artifactId>
+			<groupId>io.lettuce</groupId>
+			<artifactId>lettuce-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+		<!-- Ehcache 依赖 <dependency> <groupId>org.ehcache</groupId> <artifactId>ehcache</artifactId> 
+			</dependency> <dependency> <groupId>javax.cache</groupId> <artifactId>cache-api</artifactId> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

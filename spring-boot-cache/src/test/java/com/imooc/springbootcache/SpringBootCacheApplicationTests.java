@@ -40,8 +40,9 @@ class SpringBootCacheApplicationTests {
 		GoodsDo temp = new GoodsDo();
 		temp.setId(1L);
 		temp.setName("新的商品");
-		GoodsDo newGoods = goodsService.edit(temp);
-		// 打印缓存内容
+		goodsService.edit(temp);
+		// 查询并打印已更新的缓存内容
+		GoodsDo newGoods = goodsService.getById(1L);
 		logger.info("new goods id:{} name:{}", newGoods.getId(), newGoods.getName());
 	}
 }
