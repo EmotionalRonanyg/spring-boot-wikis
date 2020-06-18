@@ -42,6 +42,8 @@ public class SecurityConfig {
 		return new WebSecurityConfigurerAdapter() {
 			@Override
 			public void configure(HttpSecurity httpSecurity) throws Exception {
+				// 开启跨域支持
+				httpSecurity.cors();
 				// 从数据库中获取权限列表
 				List<String> paths = securityService.getApiPaths();
 				for (String path : paths) {
